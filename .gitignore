@@ -1,0 +1,19 @@
+# Ignore Jupyter notebook checkpoints
+**/.ipynb_checkpoints/
+
+# VS Code workspace settings
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Notebook metadata backups
+*.~ipynb
+
+# MacOS temp files
+*.swp
