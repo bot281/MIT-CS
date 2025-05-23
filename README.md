@@ -1,1 +1,1 @@
-Class taken at MIT
+Class notes taken at MIT
