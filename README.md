@@ -6,3 +6,28 @@ To read the notes, ignore everything else and look for .ipynb files. It's Jupyte
 
 note to self:
 tasks.json contains logic for pushing git automatically with Ctrl + Alt + S
+
+to run the auto_commit.ps1, put this in the following: .vscode/tasks.json
+```json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Git Auto Commit & Push",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\auto_commit.ps1"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
+```
